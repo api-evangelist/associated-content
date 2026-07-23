@@ -1,23 +1,67 @@
 aid: associated-content
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/associated-content.png
 name: Associated Content
-description: Associated Content is a company surfaced as a portfolio company of canaan-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Associated Content was an open content publishing platform founded in 2005 by Luke Beatty
+  that paid contributors to publish articles, video, audio, and images on any topic, then distributed
+  that library through associatedcontent.com and a network of syndication partners. At its peak it hosted
+  over one million pieces of content from roughly 250,000 contributors and adopted Thomson Reuters
+  OpenCalais for automated classification of that library. It raised a $5.4M Series A from SoftBank Capital
+  (2006), a $10M Series B from SoftBank, Canaan Partners, and Tim Armstrong (2007), and $6M more in 2009,
+  before Yahoo acquired it in May 2010. Yahoo rebranded the property as Yahoo Voices in December 2011 and
+  shut it down on July 31, 2014, retiring the Yahoo Contributor Network the following month. The company
+  is defunct: it never published a public developer API, and associatedcontent.com is now a parked domain
+  that refuses HTTPS.'
 url: https://raw.githubusercontent.com/api-evangelist/associated-content/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - canaan-partners
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
+x-status: defunct
+x-status-detail: Acquired by Yahoo in May 2010; operated as Yahoo Voices from December 2011; shut down
+  July 31, 2014.
+x-acquired-by: yahoo
+x-acquired-date: '2010-05'
+x-shutdown-date: '2014-07-31'
+x-domain-status: parked
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Defunct
+- Acquired
+- Media
+- Publishing
+- Content
+- User Generated Content
+- Digital Media
+- Syndication
 apis: []
+common: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
+  notes: 'Company is defunct (Yahoo acquisition 2010, shut down 2014). No developer API, docs, SDK, or
+    package surface was ever published; associatedcontent.com resolves to a parking host (199.191.50.166,
+    ztomy.com nameservers), refuses HTTPS, and returns an error page over HTTP. Wayback CDX across 3,000
+    archived URLs shows no /api or /developer paths. No artifacts written.'
